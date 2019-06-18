@@ -46,7 +46,7 @@ class GoogleSuggest
 
         foreach (IWebElement table_row in table_rows)
         {
-            Console.WriteLine(table_row);
+            Console.WriteLine(table_row.Text);
         }
 
         driver.Close();
