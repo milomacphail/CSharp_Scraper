@@ -5,7 +5,7 @@ namespace CSharp_Scraper
 {
     public class Stock
     {
-        public DateTime TimeScraped { get; set }
+        public DateTime TimeScraped { get; set; }
         public string StockSymbol { get; set; }
         public string LastPrice { get; set; }
         public string Change { get; set; }

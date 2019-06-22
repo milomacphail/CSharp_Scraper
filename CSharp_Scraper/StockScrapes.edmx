@@ -10,14 +10,14 @@
             <PropertyRef Name="Stock Index" />
           </Key>
           <Property Name="Stock Index" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Stock Symbol" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="Last Price" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="Change" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="Change Percent" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="Volume" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="Shares" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="Average Volume" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="Market Cap" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Stock Symbol" Type="nvarchar" MaxLength="50" />
+          <Property Name="Last Price" Type="nvarchar" MaxLength="50" />
+          <Property Name="Change" Type="nvarchar" MaxLength="50" />
+          <Property Name="Change Percent" Type="nvarchar" MaxLength="50" />
+          <Property Name="Volume" Type="nvarchar" MaxLength="50" />
+          <Property Name="Shares" Type="nvarchar" MaxLength="50" />
+          <Property Name="Average Volume" Type="nvarchar" MaxLength="50" />
+          <Property Name="Market Cap" Type="nvarchar" MaxLength="50" />
           <Property Name="Time Scraped" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityContainer Name="StockScrapesModelStoreContainer">
@@ -33,14 +33,14 @@
             <PropertyRef Name="Stock_Index" />
           </Key>
           <Property Name="Stock_Index" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Stock_Symbol" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Last_Price" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Change" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Change_Percent" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Volume" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Shares" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Average_Volume" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Market_Cap" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Stock_Symbol" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Last_Price" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Change" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Change_Percent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Volume" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Shares" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Average_Volume" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Market_Cap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Time_Scraped" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <EntityContainer Name="StockScrapesEntities" annotation:LazyLoadingEnabled="true">
