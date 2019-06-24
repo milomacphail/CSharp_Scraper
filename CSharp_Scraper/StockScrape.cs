@@ -14,7 +14,7 @@ namespace CSharp_Scraper
     
     public partial class StockScrape
     {
-        public int Stock_Index { get; set; }
+        public System.DateTime Time_Scraped { get; set; }
         public string Stock_Symbol { get; set; }
         public string Last_Price { get; set; }
         public string Change { get; set; }
@@ -23,6 +23,5 @@ namespace CSharp_Scraper
         public string Shares { get; set; }
         public string Average_Volume { get; set; }
         public string Market_Cap { get; set; }
-        public System.DateTime Time_Scraped { get; set; }
     }
 }

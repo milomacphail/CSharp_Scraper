@@ -12,7 +12,10 @@ namespace CSharp_Scraper
     {
         static void Main(string[] args)
         {
-            {
+            ConnectionString test = new ConnectionString();
+            test.Connector();
+
+            /*{
                 IWebDriver driver = new ChromeDriver();
 
                 driver.Navigate().GoToUrl("https://finance.yahoo.com/");
@@ -47,8 +50,7 @@ namespace CSharp_Scraper
                 ConnectionString.Connector();
 
                 driver.Close();
-
+                */
             }
         }
     }
-}

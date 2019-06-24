@@ -67,49 +67,49 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockSchema.cs" />
+    <Compile Include="StockScrape.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockScrape.Context.tt</DependentUpon>
+    </Compile>
     <Compile Include="StockScrape.cs">
-      <DependentUpon>StockScrapes.tt</DependentUpon>
+      <DependentUpon>StockScrape.tt</DependentUpon>
     </Compile>
-    <Compile Include="StockScrapes.Context.cs">
+    <Compile Include="StockScrape.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StockScrapes.Context.tt</DependentUpon>
+      <DependentUpon>StockScrape.edmx</DependentUpon>
     </Compile>
-    <Compile Include="StockScrapes.cs">
+    <Compile Include="StockScrape1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StockScrapes.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StockScrapes.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StockScrapes.edmx</DependentUpon>
+      <DependentUpon>StockScrape.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
-    <EntityDeploy Include="StockScrapes.edmx">
+    <EntityDeploy Include="StockScrape.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>StockScrapes.Designer.cs</LastGenOutput>
+      <LastGenOutput>StockScrape.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="StockScrapes.edmx.diagram">
-      <DependentUpon>StockScrapes.edmx</DependentUpon>
+    <None Include="StockScrape.edmx.diagram">
+      <DependentUpon>StockScrape.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="StockScrapes.Context.tt">
+    <Content Include="StockScrape.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StockScrapes.edmx</DependentUpon>
-      <LastGenOutput>StockScrapes.Context.cs</LastGenOutput>
+      <DependentUpon>StockScrape.edmx</DependentUpon>
+      <LastGenOutput>StockScrape.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="StockScrapes.tt">
+    <Content Include="StockScrape.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StockScrapes.edmx</DependentUpon>
-      <LastGenOutput>StockScrapes.cs</LastGenOutput>
+      <DependentUpon>StockScrape.edmx</DependentUpon>
+      <LastGenOutput>StockScrape1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
