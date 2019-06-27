@@ -12,45 +12,13 @@ namespace CSharp_Scraper
     {
         static void Main(string[] args)
         {
-            ConnectionString test = new ConnectionString();
-            test.Connector();
 
-            /*{
-                IWebDriver driver = new ChromeDriver();
+            var scrape = new Scrape("milomacphail@gmail.com", "Pandahead1");
 
-                driver.Navigate().GoToUrl("https://finance.yahoo.com/");
-
-                driver.FindElement(By.Id("uh-signedin")).Click();
-
-                //page load
-
-
-                driver.FindElement(By.Id("login-username")).SendKeys("milomacphail@gmail.com");
-                driver.FindElement(By.Id("login-signin")).SendKeys(Keys.Enter);
-
-                //Wait until the page loads
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
-
-                driver.FindElement(By.Id("login-passwd")).SendKeys("Pandahead1");
-                driver.FindElement(By.Id("login-signin")).SendKeys(Keys.Enter);
-
-                driver.FindElement(By.LinkText("My Watchlist")).SendKeys(Keys.Enter);
-
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
-
-                IWebElement table = driver.FindElement(By.XPath("//*[@id=\"pf-detail-table\"]/div[1]/table"));
-
-                IList<IWebElement> table_rows = driver.FindElements(By.TagName("tr"));
-
-                foreach (IWebElement table_row in table_rows)
-                {
-                    Console.WriteLine(table_row.Text);
-                }
-
-                ConnectionString.Connector();
-
-                driver.Close();
-                */
-            }
+            scrape.Login();
+            scrape.Navigate();
+            scrape.ScrapeTable();
+            
+        }
         }
     }
