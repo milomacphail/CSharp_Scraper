@@ -63,9 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConnectionString.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scrape.cs" />
+    <Compile Include="ScrapeData.cs" />
     <Compile Include="StockSchema.cs" />
     <Compile Include="StockScrape.Context.cs">
       <AutoGen>True</AutoGen>
